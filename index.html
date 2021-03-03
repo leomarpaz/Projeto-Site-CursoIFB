@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+	    <meta name="author" content="Leomar Paz">
+		<meta name="keywords" content="chopp, happy hour, cerveja, bar, restaurante, santa maria df, diversão, festa, familiar.">   
+	<title>Estação DO CHOPP</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="slider.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="index.js" type="text/javascript"></script>
+</head>
+<body>
+	<section>
+		<header><img id="img-banner" src="img/banner3.jpg"alt="banner contendo nome da loja juntamente com a logo, telefone e instagram" ></header>
+		<nav id="nav-topo">
+			<ul id="ul-topo">
+				<li id="li-topo"><a class="a-menu" href="#"><b>HOME</b></a></li>
+                <li id="li-topo"><a class="a-menu" href="#pag-sobre"><b>SOBRE</b></a></li>
+				<li id="li-topo"><a class="a-menu" href="#pag-produtos"><b>PRODUTOS</b></a></li>
+				<li id="li-topo"><a class="a-menu" href="#pag-encomendas"><b>ENCOMENDAS</b></a></li>
+            </ul>
+		</nav>
+		<nav>
+             <div class="sidebar">
+                 <div class="social-links">
+                    <a href="https://www.facebook.com/aestacaodochopp/?ref=page_internal" target="_blank"><i class="fab fa-facebook fa-3x cust"></i></a>
+                    <a href="https://www.instagram.com/estacao.do.chopp/" target="_blank"><i class="fab fa-instagram fa-3x cust"></i></a>
+                    <a href="https://api.whatsapp.com/send/?phone=556130556490&text&app_absent=0" target="_blank"><i class="fab fa-whatsapp fa-3x cust"></i></a>
+                    <a href="https://goo.gl/maps/ZtidKCiAMxD1faV98" target="_blank"><i class="fas fa-map-marker-alt fa-3x cust"></i></a>
+                 </div>
+             </div>
+		</nav>
+		<main>
+            <section id="box-main">
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                      <img src="img/slider/slide1.jpg">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <img src="img/slider/slide2.jpg">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <img src="img/slider/slide3.jpg">
+                    </div>
+                        
+                    </div>
+                    <br>
+                    
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span> 
+                        <span class="dot" onclick="currentSlide(2)"></span> 
+                        <span class="dot" onclick="currentSlide(3)"></span> 
+                      </div>
+                      <span id="pag-sobre"></span>
+            </section>
+            <article>
+                <h1>Estação Do Chopp</h1>
+            
+                <p>A <strong><span id="txt"> Estação do Chopp </span></strong> é um bar e petiscaria aconchegante, <strong> <span id="txt"> com uma cerveja zero grau e um chopp estupidamente gelado </span> </strong>, ambiente familiar com um cardápio variado e com uma qualidade muito boa.</p>
+                <p>Quem conhece não esquece e tem vontade de voltar! 🍻
+                📌Fica localizado na QR 218, Conjunto P, Loja 25 - Santa Maria Norte.
+                🕐 Funcionamento: de Terça a Domingo das 16:00 as 02h
+                🍻 Happy Hour de Terça a Domingo das 16:00 as 20h e com o Chopp geladinho a R$ 4,99.</p>
+            </article>
+    
+            <section id="pag-produtos">
+                <h2>Produtos</h2>
+    
+                <div id="container">
+                    <div class="card">
+                        <img class="img-produtos" src="img/cerveja.jpg">
+                        <div class="card-content">
+                            <h3>Cerveja</h3>
+                            <p id="p2">por apenas R$5,99</p>
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <img class="img-produtos" src="img/calabresa.jpg">
+                        <div class="card-content" >
+                            <h3>Porção de Calabesa</h3>
+                            <p id="p2">por apenas R$22,90</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="img-produtos" src="img/batata.jpg">
+                        <div class="card-content">
+                            <h3>Porção de Batata</h3>
+                            <p id="p2">por apenas R$18,90</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="img-produtos" src="img/churrasco.jpg">
+                        <div class="card-content">
+                            <h3>Churrasco</h3>
+                            <p id="p2">por apenas R$8,99</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+        
+            <section id="pag-encomendas">
+                <h2> Encomendas </h2>
+    
+                <form name="Nome" method="" action="">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome_Completo" placeholder="Digite o seu nome completo" required />
+    
+    
+                    <label for="email">E-mail:</label>
+                    <input id="email" type="email" name="email" placeholder="nome@email.com" required="" />	
+    
+                    <label for="produtos"> Produtos: </label>
+                    <select id="produtos" name="produtos">
+                        <option value=""> Selecione</option>
+                        <option value="cerveja">Cerveja</option>
+                        <option value="batata">Porção de batata com mussarela e molho especial</option>
+                        <option value="calabresa">Porção de calabresa acebolada</option>
+                        <option value="churrasco">Churrasco</option>
+                     </select>
+    
+                     <label for="quant">Quantidade:</label>
+                     <input id="quant" type="number" name="quant" min="1" max="100" step="1">
+    
+                     <fieldset>
+                         <legend>Forma Retirada </legend>
+                         <input id="del" type="radio" name="Retirada" value="del"/> <label for="del"> Delivery</label><br/>
+                         <input id="ret" type="radio" name="Retirada" value="ret"> <label for="ret"> Retirar no Local </label>
+                     </fieldset>
+    
+                    <label for="coment">Comentários:</label>
+                    <textarea id="coment" cols="80" rows="4">
+                    </textarea>
+                    <div id="botoes-form">
+                        <input type="submit" name="btn-encomendar" value="ENCOMENDAR" e/>
+                        <input type="reset" name="btn-cancelar" value="CANCELAR" />
+                    </div>
+                </form>
+            </section>	
+		</main>
+        <aside></aside>
+        <div id="bt-top">
+            <button onclick="backToTop()" id="bt-top" i class="far fa-arrow-alt-circle-up fa-4x cust"></i></button>
+        </div>
+		<footer><p>Desenvolvido por <a href="https://www.instagram.com/leomarpaz2203/" target="_blank"> Leomar Paz </a>- 2020</p></footer>
+        <script src="index.js"></script>
+    </section>
+    
+</body>
+</html>
